@@ -1,0 +1,93 @@
+/*
+@author Caden Goodman
+@date 04 May 2025
+@file styles.css
+*/
+
+html{
+    margin: 0% 10% 0% 10%;
+    padding: 0%;
+
+    background-color:rgba(221, 221, 206, 0.83);
+    height: 100%;
+    
+}
+
+body{
+    position: absolute;
+    top: 0px;
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    justify-self: center;
+    background-color:white;
+    border-left: 1em groove rgb(165, 134, 30);
+    border-right: 1em groove rgb(165, 134, 30);
+    
+
+
+
+}
+
+main{
+    font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+}
+
+#input-content{
+    justify-self: center;
+}
+
+#math-content{
+    display: flex;
+    flex-direction: row;
+    flex:auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 2560px){
+    main{
+        font-size: xx-large;
+    }
+    body{
+        width: calc(80% - 2em);
+    }
+    input{
+        font-size: xx-large;
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    main{
+        font-size: large;
+        justify-content: center;
+    }
+    body{
+        width: calc(80% - 2em);
+    }
+    input{
+        font-size: large;
+        width: 10%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    
+    html{
+        margin: 0%;
+    }
+    body{
+        width: calc(100% - 2em);
+    }
+    main{
+        font-size: medium;
+    }
+    input{
+        font-size: medium;
+    }
+    #math-content{
+        flex-direction: column;
+    }
+}
